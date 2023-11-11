@@ -80,4 +80,4 @@ The `Segmenter` module employs Meta's Segment Anything to identify and segment o
 3. Monitor the console output for system alerts, warnings, and customer profiling information.
 
 ## License
-This Smart Parking System script is released under the MIT License. See the [LICENSE](LICENSE) file for details.
+This Smart Parking System script is released under the MIT License.

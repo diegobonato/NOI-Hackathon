@@ -21,14 +21,17 @@ def PersonDetection(image_path):
     image_name=image_path[:-4]
 
     # Detect objects in the input image
-    detections = detector.detectObjectsFromImage(input_image=os.path.join(execution_path , image_path), output_image_path=os.path.join(execution_path , f"{image_name}2.jpg"), minimum_percentage_probability=30)
+    #output image will be save into cache folder:
+    detections = detector.detectObjectsFromImage(input_image=os.path.join(execution_path , image_path), output_image_path=f"cache/{image_name}2.jpg", minimum_percentage_probability=30)
 
     # Check if a person is detected in the image
     is_person=False
+    n_person = 0
     for eachObject in detections:
         if eachObject["name"] == "person":
             is_person=True
-            return is_person
-    return is_person
+            n_person += 1
+            
+    return is_person, n_person
 
      

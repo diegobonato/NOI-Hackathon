@@ -11,11 +11,11 @@ def FaceRecognition(image_path):
         
         age = objs[0]["age"]
         gender = objs[0]["dominant_gender"]
-        race  = objs[0]["dominant_race"]
+        ethnicity  = objs[0]["dominant_race"]
         emotion = objs[0]["dominant_emotion"]
         
         # Create a dictionary with the 4 variables
-        result_dict = {'age': age, 'gender': gender, 'race': race, 'emotion': emotion}
+        result_dict = {'age': age, 'gender': gender, 'ethnicity': ethnicity, 'emotion': emotion}
         
         # Return the dictionary
         return result_dict

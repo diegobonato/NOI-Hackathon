@@ -21,7 +21,7 @@ def CarDetection(image_path):
     image_name=image_path[:-4]
 
     # Detect objects in the input image
-    detections = detector.detectObjectsFromImage(input_image=os.path.join(execution_path , image_path), output_image_path=os.path.join(execution_path , f"{image_name}2.jpg"), minimum_percentage_probability=30)
+    detections = detector.detectObjectsFromImage(input_image=os.path.join(execution_path , image_path), output_image_path=f"cache/{image_name}2.jpg", minimum_percentage_probability=30)
 
     # Check if a car is detected in the image
     is_car=False

@@ -2,7 +2,7 @@ import ocrspace
 import re
 
 
-def Plate_Detection(image_path):
+def PlateDetection(image_path):
     """
     This function takes an image path as input and returns the detected license plate number.
     It uses OCR to extract text from the image and then applies a regular expression to find the license plate number.

@@ -1,6 +1,13 @@
 
 ## Overview
-This Python scripts are part of a system to manage parking spaces equipped with electric vehicle (EV) charging stations. The system utilizes various detection modules to identify and monitor vehicles, individuals, and their activities.
+This Python scripts are part of a system to manage parking spaces equipped with electric vehicle (EV) charging stations. The system utilizes various detection modules to identify and monitor vehicles, individuals, and their activities. The main goal is to 
+
+1. Identify a parking abuse.
+2. Improve customer experience: understand if assistance is needed, recommend points of interests nearby after charging has begun.
+3. Customer profiling.
+
+You can find the presentation of this project at this [link](https://hackathon.bz.it/project/chargeware) .
+ 
 
 ##  AI Modules
 

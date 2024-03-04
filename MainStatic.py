@@ -1,3 +1,22 @@
+"""
+
+Main function that performs the following tasks:
+- Detects if a car is arriving
+- Detects if the car is electric or not
+- Detects if a person is getting out of the car
+- Profiles the person
+- Detects if the person is happy or not
+- Starts the charging phase
+- Mines the video to get as much data as possible
+- Sends the data to the API
+
+Output:
+{'age': 34, 'gender': 'Man', 'ethnicity': 'white', 'emotion': 'neutral', 'time_stamp': '2023-11-11 05:27:17'}
+
+
+"""
+
+
 from CarDetection import CarDetection
 from FaceRecognition import FaceRecognition
 from PersonDetection import PersonDetection
@@ -26,7 +45,7 @@ while trigger:
     start_timer = time.time()
 
     # Take a picture and save it in the folder "images"
-    image = "car_arrival.jpg"
+    image = "imgs/car_arrival.jpg"
 
     # take the picture and detect if there is a car
     Car_detected = CarDetection(image) 
@@ -35,7 +54,7 @@ while trigger:
 
         # Check if car is electric or not by checking the license plate
         # TODO: This is fixed, in real life it will be a continous checking of the license plate
-        image = 'plate.jpeg' 
+        image = 'imgs/plate.jpeg' 
 
         Plate_number = PlateDetection(image)
 
@@ -68,7 +87,7 @@ while trigger:
 
             # Start to take frame from the camera unitl a person is detected
             # Here we're still scripting, in real life it will be a continous checking of the camera.
-            image = "man.jpg"
+            image = "imgs/man.jpg"
             Person_detected = False
 
             # If a car arrives we want to understand weather the person is getting out of the car or not.

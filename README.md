@@ -12,6 +12,10 @@ chargeware is a project that aims to fullfill VMware needs of creating smart EV 
 
 Here only the AI part is reported. To see the full project, consult the original repository from which this was forked (XRDPlus)
 
+The output of `MainStatic.py` is a dictionary that is sent to a database.
+
+`{'age': 34, 'gender': 'Man', 'ethnicity': 'white', 'emotion': 'neutral', 'time_stamp': '2023-11-11 05:27:17'}`
+
 ## Overview
 This Python scripts are part of a system to manage parking spaces equipped with electric vehicle (EV) charging stations. The system utilizes various detection modules to identify and monitor vehicles, individuals, and their activities. The main goal is to 
 
@@ -27,6 +31,8 @@ You can find the presentation of this project at this [link](https://hackathon.b
 ### CarDetection
 The `CarDetection` module is responsible for identifying the presence of a car in the parking space. It captures an image and uses car detection algorithms to determine whether a car is present.
 
+<img src="imgs/car_arrival2.jpg">
+
 ### PlateDetection
 The `PlateDetection` module is used to read the license plate of the detected car. The script captures an image and processes it to extract the license plate information.
 
@@ -36,8 +42,12 @@ The `PersonDetection` module monitors the area to detect if a person is present.
 ### FaceRecognition
 The `FaceRecognition` module is utilized for customer profiling. It captures an image of the person, recognizes facial features, and extracts information such as age, gender, ethnicity, and emotion.
 
+<img src="imgs/iper_confused2.jpg">
+
 ### Segmenter
 The `Segmenter` module employs Meta's Segment Anything to identify and segment objects within an image. This is used to gather additional information about the environment.
+
+<img src="imgs/cars2.jpg">
 
 ## Configuration for a MVP 
 

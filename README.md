@@ -1,3 +1,16 @@
+# chargeware - AI for parking abuse detection and customer profiling
+
+chargeware is a project that aims to fullfill VMware needs of creating smart EV charging stations. Using ML and AI data is collected to detect users and authorize them. In case of a a parking abuse, the system is able to detect:
+
+- thermal engine cars
+
+- ev, not plugged in after 5 mins
+
+- ev, finished charging and still occupying the spot
+
+**This is a proof-of-concept developed during the 24h Hackathon at NOI Techpark on 10th of November 2023.**
+
+Here only the AI part is reported. To see the full project, consult the original repository from which this was forked (XRDPlus)
 
 ## Overview
 This Python scripts are part of a system to manage parking spaces equipped with electric vehicle (EV) charging stations. The system utilizes various detection modules to identify and monitor vehicles, individuals, and their activities. The main goal is to 
@@ -81,10 +94,3 @@ The `Segmenter` module employs Meta's Segment Anything to identify and segment o
   - `Segmenter`
 - External dependencies may include image processing libraries and APIs for license plate recognition and facial recognition.
 
-## Usage
-1. Modify the script according to your requirements and configurations.
-2. Run the script in a Python environment.
-3. Monitor the console output for system alerts, warnings, and customer profiling information.
-
-## License
-This Smart Parking System script is released under the MIT License.

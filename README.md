@@ -21,7 +21,7 @@ This Python scripts are part of a system to manage parking spaces equipped with 
 
 You can find the presentation of this project at this [link](https://hackathon.bz.it/project/chargeware) .
  
-
+**See the file ` MainStatic.py` for the complete implementation**
 ##  AI Modules
 
 ### CarDetection
@@ -79,18 +79,4 @@ The `Segmenter` module employs Meta's Segment Anything to identify and segment o
 6. **API Requests:**
    - Sends relevant data, including parking arrival, driver exit, user profiling, and environmental information, to a specified API.
 
-## Notes
-- Ensure that all necessary dependencies and libraries are installed.
-- The script is designed for testing purposes and may require adjustments for a real-time environment.
-- The API endpoints are currently commented out and should be modified with the appropriate URLs in a production environment.
-- The initial run may take up to a minute to load dependencies.
-
-## Dependencies
-- Ensure that the following Python modules are installed:
-  - `CarDetection`
-  - `FaceRecognition`
-  - `PersonDetection`
-  - `PlateDetection`
-  - `Segmenter`
-- External dependencies may include image processing libraries and APIs for license plate recognition and facial recognition.
 

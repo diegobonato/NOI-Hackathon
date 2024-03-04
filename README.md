@@ -21,7 +21,7 @@ This Python scripts are part of a system to manage parking spaces equipped with 
 
 You can find the presentation of this project at this [link](https://hackathon.bz.it/project/chargeware) .
  
-**See the file ` MainStatic.py` for the complete implementation**
+**See the file `MainStatic.py` for the complete implementation**
 ##  AI Modules
 
 ### CarDetection
